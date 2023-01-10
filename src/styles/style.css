@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+html {
+    scroll-behavior: smooth;
+}
+section {
+    height: 100vh;
+    width: 100%;
+}
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../../public/images/home.jpg');
+    background-size: cover;
+    position: relative;
+}
+/* NAV */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: baseline;
+}
+/* NAVBUTTON */
+.btn-show {
+    display: none;
+}
+/* LOGO */
+.header nav .logo {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.header nav .logo span {
+    font-weight: 800;
+    color: red;
+}
+/* NAVBAR MENU */
+.header .navbar ul {
+    display: flex;
+    list-style: none;
+}
+.header .navbar ul li {
+    padding: 10px 30px;
+}
+.header .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.header .navbar ul li:hover a {
+    color: red;
+}
+/* LING BUTTON */
+.link-btn {
+    background-color: red;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.header .navbar ul li.link-btn:hover {
+    background-color: #fff;
+    color: red;
+}
+/* BANNER */
+.header .banner {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    padding-left: 50px;
+}
+.header .banner h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.header .banner h1 span {
+    font-weight: 800;
+    color: red;
+}
+.header .banner p {
+    margin: 30px 0;
+}
+/* SERVICE */
+.header .services {
+    position: absolute;  
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.header .services .service {
+    padding: 20px;
+}
+.header .services .service h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.header .services .service p {
+    color: grey;
+    font-size: 14px;
+    margin: 15px 0;
+}
+.header .services .service a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header .services .service:nth-child(1) {
+    background-color: #26282c;
+}
+.header .services .service:nth-child(1) h3, .header .services .service:nth-child(1) a {
+    color: #fff;
+}
+.header .services .service:nth-child(1) p {
+    color: grey;
+}
+.header .services .service:nth-child(2) {
+    background-color: #E4E4E4;
+}
+.header .services .service:nth-child(3) {
+    background-color: #F1F1F1;
+} 
+/* PROJECT */
+.project {
+    background-color: #F1F1F1;
+}
+.project .row {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.project .col {
+    width: 50vw;
+    height: 100vh;
+    padding: 100px;
+}
+.project .col h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.project .col p {
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.project .col-2 {
+    position: relative;
+}
+.project .box-1 {
+    position: absolute;
+    background-color: red;
+    width: 350px;
+    height: 250px;
+    top: 100px;
+    right: 70px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.project .box-2 {
+    position: absolute;
+    background-color: lightpink;
+    width: 100%;
+    height: 400px;
+    bottom: 20px;
+    left: 0;
+}
+.project .img-box {
+    position: absolute;
+    background-image: url('../../public/images/house.jpeg');
+    background-size: cover;
+    width: 350px;
+    height: 400px;
+    left: 50px;
+    top: 150px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+/* TREND */
+.trend {
+    background-color: red;
+    color: #F1F1F1;
+}
+.trend .row {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trend h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0;
+    padding: 50px;
+}
+.trend p {
+    padding: 30px;
+    margin: 30px 0;
+    line-height: 30px;
+}
+.trend .img-box {
+    width: 600px;
+    height: 300px;
+    margin: 20px 0;
+}
+.trend .img-box img {
+    width: 100%;
+    height: 100%;
+    margin-left: 480px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* FEATURE */
+.feature {
+    background-color: #333;
+    color: whitesmoke;
+}
+.feature .row {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feature h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0;
+    padding: 25px;
+}
+.feature p {
+    margin: 30px 0;
+    line-height: 30px;
+}
+
+.feature .img-boxs {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    width: 100%;
+    height: 350px;
+    grid-gap: 20px;
+}
+.feature .img-boxs .img-box-1 {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url('../../public/images/home2.jpg'); 
+    background-size: cover; 
+    box-shadow: rgba(254, 254, 255, 0.2) 0px 7px 29px 0px; 
+}
+.feature .img-boxs .img-box-2 {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url('../../public/images/home3.jpeg');     
+    background-size: cover; 
+    box-shadow: rgba(254, 254, 255, 0.2) 0px 7px 29px 0px; 
+}
+.feature .img-boxs .img-box-3 {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url('../../public/images/home4.jpg');     
+    background-size: cover;
+    box-shadow: rgba(254, 254, 255, 0.2) 0px 7px 29px 0px;  
+}
+.feature .img-boxs h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 15px 0;
+    text-align: center;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: yellow;
+}
+.feature .img-boxs p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 20px 0;
+    padding: 10px 10px;
+    text-align: center;
+}
+.feature .row span {
+    color: red;
+    text-transform: uppercase;
+}
+/* PROJECT-1 */
+.project-1 {
+    background-color: #E4E4E4;
+}
+.project-1 .row-1 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.project-1 .col-1 {
+    width: 50vw;
+    height: 100vh;
+    padding: 100px;
+}
+.project-1 .col-1 h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.project-1 .col-1 p {
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.project-1 .col-3 {
+    position: relative;
+}
+.project-1 .box-et {
+    position: absolute;
+    background-color: grey;
+    width: 300px;
+    height: 250px;
+    top: 100px;
+    right: -500px;
+}
+.project-1 .box-et2 {
+    position: absolute;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    bottom: 50px;
+    left: -50px;
+}
+.project-1 .img-box-4 {
+    position: absolute;
+    background-image: url('../../public/images/house5.jpeg');
+    background-size: cover;
+    width: 550px;
+    height: 300px;
+    left: -50px;
+    top: 225px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.project-1 .row-1 h2 {
+    font-size: 20px;
+    color: #26282c;
+    margin: 10px 0;
+}
+.project-1 .row-1 span {
+    color: red;
+    text-transform: uppercase;
+}
+.project-1 .row-1 ul{
+    list-style: none;
+}
+.project-1 .row-1 li {
+    line-height: 35px;
+}
+
+/* FOOTER */
+.footer .footer-title {
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    padding: 100px;
+}
+.footer .footer-title h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+.footer .footer-title h1 span {
+    color: red;
+    text-transform: uppercase;
+}
+.footer .footer-bottom .footer-logo h1 {
+    color: red;
+    margin: 30px 0;
+    font-weight: 700;
+    font-size: 35px;
+}
+.footer .footer-bottom {
+    color: #26282c;
+    display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+    margin: 50px 50px;
+}
+.footer .footer-bottom .ser {
+    line-height: 25px;
+}
+.footer .footer-bottom .ser h3 {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: white;
+    transition: 0.3s;
+}
+.footer .footer-bottom .ser h3:hover {
+    transition: 0.3s;
+    text-decoration: underline;
+}
+.footer .footer-bottom .ser div {
+    font-size: 15px;
+    color: gainsboro;
+    transition: 0.3s;
+}
+.footer-bottom .ser div:hover {
+    color: wheat;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy h5 {
+    position: absolute;
+    bottom: 15px;
+    color: yellow;
+    border-bottom: 1px solid white;
+}
+.footer {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../../public/images/house9.jpg');
+    background-size: cover;
+    position: relative;
+}
+/* GALLERY */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+}
+.container .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .gall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .gall h1 {
+    margin: 50px 0;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #333;
+}
+.container .gallery .img-box {
+    background-image: url('../../public/images/home.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    transition: width 0.5s;
+}
+.container .gallery .img-box:nth-child(2) {
+    background-image: url('../../public/images/home2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container .gallery .img-box:nth-child(3) {
+    background-image: url('../../public/images/home3.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.container .gallery .img-box:nth-child(4) {
+    background-image: url('../../public/images/home4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container .gallery .img-box:nth-child(5) {
+    background-image: url('../../public/images/house.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.container .gallery .img-box:nth-child(6) {
+    background-image: url('../../public/images/house5.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.container .gallery .img-box h3 {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+.container .gallery .img-box:hover {
+    width: 300px;
+    cursor: pointer;
+}
+.container .gallery .img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+}
+.project .back {
+    background-color: #26282c;
+    height: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+}
+.project .back a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.footer .footer-bottom span {
+    color: white;
+    margin: 0px 8px;
+    cursor: pointer;
+}
